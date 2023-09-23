@@ -3,10 +3,37 @@
 :root {
     --primary-color: #3c346d;
     --second-color: #f6a9fb;
+    --table-color: lightpink;;
 }
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+button {
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: 0.5s;
+}
+
+button:hover {
+    transform: scale(1.1)
+}
+
+i {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+i:hover {
+    cursor: pointer;
+    transform: scale(1.2)
 }
