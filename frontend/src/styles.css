@@ -3,7 +3,7 @@
 :root {
     --primary-color: #3c346d;
     --second-color: #f6a9fb;
-    --table-color: lightpink;;
+    --table-color: rgb(255, 199, 207);;
 }
 
 * {
@@ -20,8 +20,9 @@ button {
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
     color: white;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 button:hover {
@@ -30,10 +31,19 @@ button:hover {
 
 i {
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 i:hover {
     cursor: pointer;
+    transform: scale(1.2)
+}
+
+a {
+    all: unset;
+    transition: 0.3s;
+}
+
+a:hover {
     transform: scale(1.2)
 }
