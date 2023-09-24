@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-color);
+}
+
+div#container {
+    overflow-x: auto;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 20px;
+}

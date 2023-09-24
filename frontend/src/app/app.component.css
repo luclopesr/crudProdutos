@@ -1,4 +1,4 @@
-header {
+/* header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -12,7 +12,7 @@ header {
 
 header img {
     width: 80px;
-}
+} */
 
 main {
     display: flex;
@@ -23,11 +23,11 @@ main {
     margin: auto;
 }
 
-section {
+/* section {
     border: 3px solid var(--primary-color);
     border-radius: 10px;
     padding: 15px;
-}
+} */
 
 form {
     display: flex;
@@ -72,7 +72,7 @@ form input, form select {
 }
 
 
-table {
+/* table {
     border-collapse: collapse;
     width: 100%;
 }
@@ -101,7 +101,7 @@ div#container {
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 20px;
-}
+} */
 
 footer {
     display: flex;
