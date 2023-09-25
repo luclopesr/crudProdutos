@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Produto } from 'src/app/produto';
 import { DataService } from 'src/app/service/data.service';
 
@@ -14,7 +14,7 @@ export class ProdutoEditComponent {
   data:any
   produto = new Produto();
 
-  constructor(private route:ActivatedRoute, private dataService:DataService) { }
+  constructor(private route:ActivatedRoute, private dataService:DataService, private router:Router) { }
 
   ngOnInit(): void {
     // console.log(this.route.snapshot.params['id']);
@@ -32,7 +32,7 @@ export class ProdutoEditComponent {
 
   updateProduto() {
     this.dataService.updateData(this.id, this.produto).subscribe(res => {
-
+      this.router.navigate(['/']);
     })
   }
 }
