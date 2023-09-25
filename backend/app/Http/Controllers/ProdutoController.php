@@ -8,7 +8,12 @@ use App\Models\Produto;
 class ProdutoController extends Controller
 {
     public function getProduto() {
-        return response()->json(Produto::all(), 200);
+        $produtos = Produto::select('produtos.nome', 'categorias.nome as categoria', 'produtos.valor', 'produtos.validade', 'produtos.quantidade', 'produtos.perecivel')
+                            ->join('categorias', 'produtos.categoria', '=', 'categorias.id')
+                            ->orderBy('categorias.nome')
+                            ->orderBy('produtos.nome')
+                            ->get();
+        return response()->json($produtos, 200);
     }
 
     public function getProdutoById($id) {

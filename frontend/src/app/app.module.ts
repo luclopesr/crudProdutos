@@ -5,9 +5,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './components/header/header.component';
+import { FormComponent } from './components/form/form.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 const appRoutes: Routes = [
@@ -18,7 +20,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ProdutosComponent,
-    NavbarComponent
+    HeaderComponent,
+    FormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

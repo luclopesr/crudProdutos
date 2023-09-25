@@ -1,0 +1,48 @@
+<section class="inserir-produto">
+    <h1>Inserir Produtos</h1>
+    <form action="">
+        <div class="input-nome">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="input-categoria">
+        <label for="categoria">Categoria:</label>
+        <select name="categoria" id="categoria" required>
+            <option selected disabled value="">Selecione</option>
+            <option value="1">Alimentos</option>
+            <option value="2">Roupas</option>
+            <option value="3">Eletrônicos</option>
+            <option value="4">Livros</option>
+            <option value="5">Arte</option>
+            <option value="6">Outro</option>
+        </select>
+        </div>
+
+        <div class="input-valor">
+            <label for="valor">Valor:</label>
+            <input type="number" name="valor" id="valor" required>
+        </div>
+
+        <div class="input-validade">
+            <label for="validade">Data de validade:</label>
+            <input type="date" name="validade" id="validade">
+        </div>
+
+        <div class="input-quantidade">
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" name="quantidade" id="quantidade" required>
+        </div>
+
+        <div class="input-perecivel">
+            <span>É perecível?</span>
+            <div class="respostas">
+                <label for="resposta1"><input type="radio" id="resposta1" name="perecivel" value="true"/>Sim</label>
+                
+                <label for="resposta2"><input type="radio" id="resposta2" name="perecivel" value="false" />Não</label>
+            </div>
+        </div>
+
+        <button type="submit">Adicionar</button>
+    </form>
+</section>
