@@ -28,4 +28,10 @@ export class ProdutosComponent {
       this.getProdutosData();
     })
   }
+
+  deleteData(id:any) {
+    this.dataService.deleteData(id).subscribe(res => {
+      this.getProdutosData();
+    })
+  }
 }

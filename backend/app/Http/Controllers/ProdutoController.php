@@ -8,7 +8,7 @@ use App\Models\Produto;
 class ProdutoController extends Controller
 {
     public function getProduto() {
-        $produtos = Produto::select('produtos.nome', 'categorias.nome as categoria', 'produtos.valor', 'produtos.validade', 'produtos.quantidade', 'produtos.perecivel')
+        $produtos = Produto::select('produtos.id', 'produtos.nome', 'categorias.nome as categoria', 'produtos.valor', 'produtos.validade', 'produtos.quantidade', 'produtos.perecivel')
                             ->join('categorias', 'produtos.categoria', '=', 'categorias.id')
                             ->orderBy('categorias.id')
                             ->orderBy('produtos.nome')
