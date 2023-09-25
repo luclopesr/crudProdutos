@@ -10,7 +10,7 @@ class ProdutoController extends Controller
     public function getProduto() {
         $produtos = Produto::select('produtos.nome', 'categorias.nome as categoria', 'produtos.valor', 'produtos.validade', 'produtos.quantidade', 'produtos.perecivel')
                             ->join('categorias', 'produtos.categoria', '=', 'categorias.id')
-                            ->orderBy('categorias.nome')
+                            ->orderBy('categorias.id')
                             ->orderBy('produtos.nome')
                             ->get();
         return response()->json($produtos, 200);

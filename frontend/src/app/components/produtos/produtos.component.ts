@@ -18,7 +18,6 @@ export class ProdutosComponent {
   getProdutosData() {
     this.dataService.getData().subscribe(res => {
       this.produtos = res;
-      
     });
   }
 }
