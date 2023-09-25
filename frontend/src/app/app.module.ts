@@ -10,10 +10,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { ProdutoEditComponent } from './components/produto-edit/produto-edit.component';
 
 
 const appRoutes: Routes = [
-  { path: '', component:ProdutosComponent}
+  { path: '', component:ProdutosComponent},
+  { path: 'edit/:id', component:ProdutoEditComponent }
 ]
 
 @NgModule({
@@ -21,7 +23,8 @@ const appRoutes: Routes = [
     AppComponent,
     ProdutosComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProdutoEditComponent
   ],
   imports: [
     BrowserModule,
