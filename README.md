@@ -2,6 +2,10 @@
 
 Neste projeto, foi desenvolvido uma aplicação de CRUD (Create, Read, Update, Delete) de produtos, utilizando uma arquitetura desacoplada entre o frontend e o backend. O frontend foi desenvolvido em **Angular**, utilizando **TypeScript** como linguagem de programação, enquanto o backend foi desenvolvido em **PHP Laravel**. O banco de dados utilizado foi o **PostgreSQL**.
 
+### Adicionais
+- **Reponsividade:** a aplicação é responsiva, portanto, permite a utilização em formatos diversos.
+- **Verificação do formulário:** a aplicação não permite inserir produtos sem que sejam respeitados os campos obrigatórios e seus tipos (o campo "Data de validade" é o único não obrigatório). 
+
 ## Pré-requisitos
 
 Antes de começar, certifique-se de ter atendido aos seguintes requisitos:
