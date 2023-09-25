@@ -8,7 +8,6 @@ import { ProdutosComponent } from './components/produtos/produtos.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './components/header/header.component';
-import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 
@@ -22,7 +21,6 @@ const appRoutes: Routes = [
     AppComponent,
     ProdutosComponent,
     HeaderComponent,
-    FormComponent,
     FooterComponent
   ],
   imports: [
