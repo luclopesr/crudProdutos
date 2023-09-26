@@ -4,7 +4,11 @@ Neste projeto, foi desenvolvido uma aplicação de CRUD (Create, Read, Update, D
 
 ### Adicionais
 - **Reponsividade:** a aplicação é responsiva, portanto, permite a utilização em formatos diversos.
-- **Verificação do formulário:** a aplicação não permite inserir produtos sem que sejam respeitados os campos obrigatórios e seus tipos (o campo "Data de validade" é o único não obrigatório). 
+- **Verificação do formulário:** a aplicação não permite inserir produtos sem que sejam respeitados os campos obrigatórios e seus tipos (o campo "Data de validade" é o único não obrigatório).
+
+## Screenshots
+![Tela inical](assets/img1.png)
+![Tela de editar](assets/img2.png)
 
 ## Pré-requisitos
 
